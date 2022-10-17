@@ -1,0 +1,21 @@
+# it records top level lib we used
+# DO NOT INSTALL
+flask
+flask-limiter
+flask-login
+pymongo
+pytz
+numpy
+python-dateutil
+urllib3
+gunicorn
+requests
+pyjwt
+pandas
+python-docx
+glob2
+opencv-python-headless
+pdf2image
+xlrd
+xlutils
+xlwt

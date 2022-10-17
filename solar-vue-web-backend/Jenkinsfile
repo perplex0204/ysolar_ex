@@ -1,0 +1,47 @@
+def image
+pipeline {
+    agent any
+    environment {
+        PROJECT_DIR = 'yushan-project'
+        PROJECT_NAME = 'solar-vue-web-backend'
+        PROJECT_VERSION = 'latest'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    image = docker.build("docker-release.cckuo.ee.ntust.edu.tw/paets/${PROJECT_DIR}/${PROJECT_NAME}:${PROJECT_VERSION}")
+                }
+                sh 'docker image prune -f'
+                sh 'docker image ls'
+            }
+        }
+        stage('Docker Push') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'CCKUO-NEXUS', url: 'https://docker-release.cckuo.ee.ntust.edu.tw') {
+                        image.push()
+                    }
+                }
+            }
+        }
+    }
+    post {
+        success {
+            mattermostSend (
+            color: "#5FB15F",
+            channel: 'jenkins-status-bot',
+            endpoint: 'https://chat.cckuo.ee.ntust.edu.tw/hooks/gorps4ihgin6jr5pfwbgass3na',
+            message: "Build success: ${env.JOB_NAME} #${env.BUILD_NUMBER} (<${env.BUILD_URL}|Link to build>)"
+            )
+        }
+        failure {
+            mattermostSend (
+            color: '#FF0000',
+            channel: 'jenkins-status-bot',
+            endpoint: 'https://chat.cckuo.ee.ntust.edu.tw/hooks/gorps4ihgin6jr5pfwbgass3na',
+            message: "Build fail: ${env.JOB_NAME} #${env.BUILD_NUMBER} (<${env.BUILD_URL}|Link to build>)"
+            )
+        }
+    }
+}

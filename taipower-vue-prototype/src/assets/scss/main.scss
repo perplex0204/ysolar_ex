@@ -1,0 +1,221 @@
+/* For light mode or prefers-color-schem not supported */
+@import url('~bootstrap/dist/css/bootstrap.min.css');
+@import url('~element-plus/dist/index.css');
+body{
+    --footer-bg-gradient: linear-gradient(90deg, rgb(96, 96, 96) 0%, rgb(121, 121, 121) 40%, rgb(160, 160, 160) 60%,rgb(99, 99, 99) 100%);
+    background: #e7dbd6;
+    color: black;
+}
+.text-main{
+    color: black !important;
+}
+/* router name */
+.router-name{
+    color: rgb(68, 66, 66);
+}
+/* login-form */
+.login-form{
+    box-shadow: 0 0 10px black;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+/* Temperature color */
+.temp-color {
+    color: #ff8046;
+}
+/* Water color */
+.water-color{
+    color: #1ca3ec;
+}
+/* reponsive_table color by YuShan */
+.responsive_table{
+	-webkit-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+	-moz-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+	box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+}
+.responsive_table_header div{
+	background-color: rgb(255, 193, 7);
+}
+.responsive_table_footer{
+	background-color: rgb(59, 59, 59);
+}
+.responsive_table_content{
+	background-color: rgba(255, 255, 255);
+}
+.footer_icon{
+	color: white !important;
+}
+.footer_icon:hover{
+	color: orange !important;
+}
+
+@media (min-width: 992px) {
+	.responsive_table_content > div{
+		background-color: rgba(255, 255, 255);
+		border-bottom: 0.5px solid gray;
+	}
+	/* If table have hover class */
+	.responsive_table_content.hover:hover > div{
+		color: var(--bs-primary);
+	}
+	/* table row is selected */
+	.responsive_table_content.select > div{
+		background-color: rgb(249, 162, 162);
+	}
+}
+
+@media (max-width: 991px) {
+	.responsive_table_body .responsive_table_content:nth-child(2n+1){
+		background-color: rgb(249, 231, 200);
+	}
+	.responsive_table_content{
+		-webkit-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+		-moz-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+		box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+	}
+	/* If table have hover class */
+	.responsive_table_content.hover:hover{
+		color: var(--bs-primary);
+	}
+	/* table row is selected */
+	.responsive_table_content.select{
+		background-color: rgb(249, 162, 162) !important;
+	}
+}
+/* weather_card */
+.weather_card{
+    background: #f0f0f0;
+}
+
+/* stationList listCard */
+/* card header color */
+.card-header.card-header-plant{
+    background: rgb(66, 131, 237);
+}
+.card-header.card-header-lgroup{
+    background: rgb(152, 220, 183);
+}
+.card-header.card-header-group{
+    background: rgb(255, 220, 98);
+}
+/* pr circle color */
+.sta_circle.card-header-plant svg{
+    stroke: rgb(66, 131, 237);
+}
+.sta_circle.card-header-lgroup svg{
+    stroke: rgb(152, 220, 183);
+}
+.sta_circle.card-header-group svg{
+    stroke: rgb(255, 220, 98);
+}
+
+/* ===================================== Dark Mode ================================================= */
+@import url('../css/bootstrap-dark/bootstrap-dark.min.css');
+@import url('./element-fix.scss');
+@media (prefers-color-scheme: dark) {
+    body{
+        --footer-bg-gradient: linear-gradient(90deg, rgb(36, 36, 36) 0%, rgb(61, 61, 61) 40%, rgb(100, 100, 100) 60%,rgb(39, 39, 39) 100%);
+        background: #212a2e;
+        color: #F7F8F8;
+    }
+    .text-main{
+        color: white !important;
+    }
+    /* router-name */
+    .router-name{
+        color: #F7F8F8;
+    }
+    /* login-form */
+    .login-form{
+        box-shadow: 0 0 10px black;
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+    }
+
+    /* reponsive_table color by YuShan */
+    .responsive_table{
+        -webkit-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+        -moz-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+        box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+    }
+    .responsive_table_header div{
+        background-color: var(--bs-warning);
+    }
+    .responsive_table_footer{
+        background-color: rgb(59, 59, 59);
+    }
+    .responsive_table_content{
+        background-color: rgb(31, 31, 31);
+    }
+    .footer_icon{
+        color: white !important;
+    }
+    .footer_icon:hover{
+        color: orange !important;
+    }
+
+    @media (min-width: 992px) {
+        .responsive_table_content > div{
+            background-color: rgb(31, 31, 31);
+            border-bottom: 0.5px solid gray;
+
+        }
+        /* If table have hover class */
+        .responsive_table_content.hover:hover > div{
+            color: var(--bs-primary);
+        }
+        /* table row is selected */
+        .responsive_table_content.select > div{
+            background-color: rgb(249, 162, 162);
+        }
+    }
+
+    @media (max-width: 991px) {
+        .responsive_table_body .responsive_table_content:nth-child(2n+1){
+            background-color: rgba(202, 148, 0, 0.89);
+        }
+        .responsive_table_content{
+            -webkit-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+            -moz-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+            box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.52);
+        }
+        /* If table have hover class */
+        .responsive_table_content.hover:hover{
+            color: var(--bs-primary);
+        }
+        /* table row is selected */
+        .responsive_table_content.select{
+            background-color: rgb(249, 162, 162) !important;
+        }
+    }
+    /* weather_card */
+    .weather_card{
+        background: #c7c7c7;
+    }
+
+    /* stationList listCard */
+    /* card header color */
+    .card-header.card-header-plant{
+        background: rgb(50, 90, 127);
+    }
+    .card-header.card-header-lgroup{
+        background: rgb(13, 89, 47);
+    }
+    .card-header.card-header-group{
+        background: rgb(222, 144, 21);
+    }
+    /* pr circle color */
+    .sta_circle.card-header-plant svg{
+        stroke: rgb(50, 90, 127);
+    }
+    .sta_circle.card-header-lgroup svg{
+        stroke: rgb(13, 89, 47);
+    }
+    .sta_circle.card-header-group svg{
+        stroke: rgb(222, 144, 21);
+    }
+    /* stationData equip select popover */
+    .selc_option:hover, .selc_option:hover i{
+        background: rgb(65, 65, 65);
+    }
+}

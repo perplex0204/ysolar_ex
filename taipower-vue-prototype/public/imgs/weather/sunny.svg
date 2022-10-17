@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified by YuShan Huang -->
+<!-- 2022/04/15 -->
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FF8246;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="92.1851" y1="46.8976" x2="103.9615" y2="83.012">
+			<stop  offset="0" style="stop-color:#F8BA77"/>
+			<stop  offset="0.2111" style="stop-color:#FBA464"/>
+			<stop  offset="0.4633" style="stop-color:#FD9153"/>
+			<stop  offset="0.7232" style="stop-color:#FF8649"/>
+			<stop  offset="1" style="stop-color:#FF8246"/>
+		</linearGradient>
+		<!-- <circle class="st0" cx="98" cy="64.7" r="20.1"/> -->
+		<circle class="st0" cx="75" cy="75" r="20.1"/>
+	</g>
+	<g>
+		<line class="st2" x1="52.1" y1="62.3" x2="40.2" y2="55.5"/>
+		<line class="st2" x1="48.2" y1="74.1" x2="34.5" y2="74.1"/>
+		<line class="st2" x1="51.3" y1="87.6" x2="39.5" y2="94.5"/>
+		<line class="st2" x1="60.8" y1="97.8" x2="54" y2="109.6"/>
+		<line class="st2" x1="74.1" y1="101.8" x2="74.1" y2="115.5"/>
+		<line class="st2" x1="87.7" y1="98.6" x2="94.5" y2="110.5"/>
+		<line class="st2" x1="97.8" y1="89.1" x2="109.6" y2="95.9"/>
+		<line class="st2" x1="101.3" y1="74.1" x2="115.5" y2="74.1"/>
+		<line class="st2" x1="98.6" y1="62.3" x2="110.5" y2="55.5"/>
+		<line class="st2" x1="89.1" y1="52.2" x2="96" y2="40.3"/>
+		<line class="st2" x1="75.8" y1="48.2" x2="75.8" y2="34.5"/>
+		<line class="st2" x1="62.3" y1="51.3" x2="55.5" y2="39.5"/>
+	</g>
+</g>
+</svg>
